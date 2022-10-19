@@ -1,0 +1,15 @@
+.cart-btn{
+  border: 1px solid transparent;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cart-btn:hover{
+  border: 1px solid #fdfdfd;
+}
