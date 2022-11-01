@@ -16,4 +16,10 @@
 
 .nav-links{
   padding: 0 20px;
+  &:hover{
+    color: #ffc94c;
+  }
+  &:focus{
+    color: #ffc94c;
+  }
 }

@@ -1,0 +1,50 @@
+.item-detail-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 60px 45px;
+
+  .movie-img{
+    width: 40%;
+    height: 350px;
+    text-align: center;
+    img{
+      width: 250px;
+      height: 100%; 
+    }
+  }
+  
+  .movie-data{
+    width: 60%;
+    h2{
+      font-size: 36px;
+      color: #fff;
+      line-height: 55px;
+    }
+    .sinopsis{
+      width: 100%;
+      max-width: 550px;
+      line-height: 24px;
+      padding-top: 15px;
+    }
+    .director{
+      padding-top: 15px;
+      font-size: 14px;
+      color: #ffc94c;
+    }
+    .price{
+      padding-top: 15px;
+    }
+    button{
+      margin-top: 30px;
+      padding: 12px 18px;
+      font-size: 16px;
+      background-color: #ffc94c;
+      border-radius: 6px;
+      color: #040714;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}

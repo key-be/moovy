@@ -1,0 +1,20 @@
+.items-counter{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 45px;
+}
+
+.items-counter-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ffc94c;
+  padding: 10px 20px;
+
+  p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffc94c;
+  }
+}
