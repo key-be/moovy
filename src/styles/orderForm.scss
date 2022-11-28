@@ -1,0 +1,26 @@
+.order-form{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+
+  label{
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  input{
+    margin-bottom: 10px;
+    border: none;
+    background-color: #ffffff56;
+    height: 40px;
+    border-radius: 6px;
+    padding-left: 8px;
+    color: #fff;
+    &::placeholder{
+      color: #ffffff8e
+    }
+  }
+}
+

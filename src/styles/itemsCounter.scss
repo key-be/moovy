@@ -1,8 +1,6 @@
 .items-counter{
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 10px 45px;
+  max-width: 400px;
 }
 
 .items-counter-container{
@@ -10,11 +8,19 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid #ffc94c;
-  padding: 10px 20px;
+  padding: 8px  10px;
 
   p{
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 600;
     color: #ffc94c;
+    display: flex;
+    align-items: center;
+  }
+  
+  button{
+    margin-top: 0 !important;
+    border-radius: 50px !important;
+    padding: 6px 12px !important; 
   }
 }

@@ -35,6 +35,7 @@
     }
     .price{
       padding-top: 15px;
+      padding-bottom: 20px;
     }
     button{
       margin-top: 30px;
@@ -47,4 +48,17 @@
       font-weight: 700;
     }
   }
+}
+
+.link-cart{
+  padding: 8px 15px;
+  border: 1px solid #ffc94c;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.done-btns{
+  display: flex;
+  justify-content: space-between;
 }

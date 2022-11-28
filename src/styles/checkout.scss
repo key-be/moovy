@@ -1,0 +1,32 @@
+.checkout{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .checkout-message{
+    margin-top: 120px;
+    text-align: center;
+
+    h2{
+      color: #fff;
+      padding-top: 15px;
+      font-size: 26px;
+    }
+    h3{
+      padding: 8px 0 20px 0;
+      color: #ffc94c;
+    }
+    p{
+      font-size: 12px;
+      margin-bottom: 40px;
+    }
+    .go-back{
+      color:#ffc94c;
+      font-size: 16px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

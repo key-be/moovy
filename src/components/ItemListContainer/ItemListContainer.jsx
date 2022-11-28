@@ -1,5 +1,6 @@
 import '../../styles/itemListContainer.scss';
-import getItemsFromAPI, {getItemFromAPIbyCategory} from '../mocks/mockService';
+//import {getItemFromAPIbyCategory} from '../mocks/mockService';
+import {getItemsFromAPI, getItemFromAPIbyCategory} from '../../firebase/firebase.js';
 import { useState, useEffect } from 'react';
 import { ItemList } from './ItemList';
 import { useParams } from 'react-router-dom';

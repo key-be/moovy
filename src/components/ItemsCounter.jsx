@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import '../styles/itemsCounter.scss'
 
-export const ItemsCounter = () => {
+export const ItemsCounter = ({stock, onAddToCart}) => {
   const [counter, setCouter] = useState(1);
 
-  let stock = 3
 
   const handleDecrease = () => {
     if (counter > 1){
@@ -24,6 +23,7 @@ export const ItemsCounter = () => {
       <p>{counter}</p>
       <button onClick={handleIncrease}>+</button>
     </div>
+    <button onClick={() => onAddToCart(counter)}>Agregar al carrito</button>
   </div>  
   
 }
