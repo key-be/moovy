@@ -1,3 +1,10 @@
+.category-list{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
 .item-list-container {
   width: 100%;
   max-width: 1400px;
@@ -8,4 +15,5 @@
   column-gap: 1%;
   justify-content: space-between;
   row-gap: 20px;
+  position: relative;
 }

@@ -21,7 +21,7 @@ export const OrderForm = (props) => {
   }
 
   const onSubmit = (e) => {
-    e.prevent.default();
+    e.preventDefault()
     props.onSubmit(userData);
   }
 

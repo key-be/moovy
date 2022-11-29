@@ -11,12 +11,12 @@ import {
   addDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA2mel_oXKNQFXdigzS3Xf7nwVyqQ36l0k",
-  authDomain: "moovy-d27cc.firebaseapp.com",
-  projectId: "moovy-d27cc",
-  storageBucket: "moovy-d27cc.appspot.com",
-  messagingSenderId: "3750953849",
-  appId: "1:3750953849:web:6d64e6284b70a8ea64a5a8"
+  apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_FIREBASE_APPID,
 };
 
 const FirebaseApp = initializeApp(firebaseConfig);

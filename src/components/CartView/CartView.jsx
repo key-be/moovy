@@ -47,10 +47,9 @@ export const CartView = () => {
             ) 
           )}
           </div>
-          <div className='cart-list-view total'>Total a pagar: ${parseFloat(totalPriceInCart().toFixed(2))}</div>
           <div className='cart-view-btns'>
-            {/*<button className='cvb done' onClick={createBuyOrder}>Terminar mi compra</button>*/}
-            <button className='cvb clear' onClick={clear}>Vaciar carrito</button>
+            <button className='cvb clear' onClick={clear}>Vaciar carrito</button>  
+            <div className='cart-list-view total'>Total a pagar: ${parseFloat(totalPriceInCart().toFixed(2))}</div>
           </div>
           <OrderForm onSubmit={createBuyOrder}/>
         </>

@@ -1,5 +1,4 @@
 import '../../styles/itemListContainer.scss';
-//import {getItemFromAPIbyCategory} from '../mocks/mockService';
 import {getItemsFromAPI, getItemFromAPIbyCategory} from '../../firebase/firebase.js';
 import { useState, useEffect } from 'react';
 import { ItemList } from './ItemList';
@@ -17,7 +16,18 @@ export const ItemListContainer = (props) => {
     }
   }, [category])
 
-  return <div className="item-list-container">
-    <ItemList moviesList={moviesList}/>
-  </div>
+  return <>
+    { category ? 
+      <div className='category-list'>
+        <h3 className='subtitle'>pelis: {category}</h3>
+        <div className="item-list-container">
+          <ItemList moviesList={moviesList}/>
+        </div>  
+      </div>
+      :
+      <div className="item-list-container">
+        <ItemList moviesList={moviesList}/>
+      </div>  
+    }
+  </> 
 }
