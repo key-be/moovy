@@ -79,7 +79,6 @@ export async function getItemFromAPIbyCategory(categoryId){
   return movie;
 }
 
-
 //------------- FUNCIONES DE COMPRA--------------------//
 
 export async function createBuyOrderFirebase(buyOrder){
@@ -89,10 +88,6 @@ export async function createBuyOrderFirebase(buyOrder){
 
   return(docRef.id)
 }
-
-
-
-
 
 //----------HELPER - SUBIR PRODUCTOS-MOVIES A FIRESTORE---------//
 

@@ -46,18 +46,7 @@ export const CartContextProvider = (props) => {
   }
 
   const removeItem = (itemId) => {
-    let removeItem = cart.filter( r => r.id === itemId.id)
-
-    if(removeItem){
-      let itemRemoved = cart.map( (r) => {
-        if(r => r.id === itemId.id){
-         return r.id - itemId.id
-        } else {
-          return r
-        }
-      } )
-      setCart(itemRemoved)
-    }
+    setCart(cart.filter( r => r.id !== itemId))
   }
 
   const clear = () => {

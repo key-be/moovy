@@ -1,5 +1,4 @@
 import { useState, useEffect, useContext } from 'react';
-//import { getSingleItemFromAPI } from './mocks/mockService';
 import { getSingleItemFromAPI } from '../firebase/firebase.js';
 import '../styles/itemDetailContainer.scss';
 import { useParams } from 'react-router-dom';
@@ -22,7 +21,7 @@ export const ItemDetailContainer = () => {
     .catch( () => alert('Error') )
   }, [])
 
-  const { addToCart } = useContext(cartContext)
+  const { addToCart, removeItem } = useContext(cartContext)
 
   function onAddToCart(counter) {
     const itemForCart = {
@@ -34,7 +33,10 @@ export const ItemDetailContainer = () => {
     setIsInCart(true)
   }
 
-  
+  function removeItemFormDetail() {
+    removeItem(movie.id)
+    setIsInCart(false)
+  }
 
   return <div className='item-detail-container'>
       { movie.length === 0 ? <Spinner/> : 
@@ -55,8 +57,8 @@ export const ItemDetailContainer = () => {
           /> :
           <div className='done-btns'>
             <Link to='/cart' className='link-cart'>Ir al carrito</Link>
-            <Link to='/cart' className='link-cart'>Volver al catalogo</Link>
-            <Link to='/cart' className='link-cart'>Quitar del carrito</Link>
+            <Link to='/' className='link-cart'>Volver al catalogo</Link>
+            <div onClick={removeItemFormDetail}  className='link-cart'>Quitar del carrito</div>
           </div>
           }
         </div>
